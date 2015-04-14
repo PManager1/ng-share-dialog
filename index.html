@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="//code.angularjs.org/1.2.16/angular.js"></script>
+    <script src="https://arlodev.netgear.com/js/angulike.js"></script>
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <script>
+    angular.module('myApp', ['angulike'])
+        .run([
+            '$rootScope',
+            function($rootScope) {
+                $rootScope.facebookAppId = '681106695333271';
+            }
+        ])
+
+    .controller('myController', [
+        '$scope',
+        function($scope) {
+            $scope.myModel = {
+                Name: "Installing Arlocameras is a breeze. Took me less than 10 minutes because it is truely wirefree #Arlo",
+                ImageUrl: 'img/B_platform.png',
+                FbLikeUrl: 'http://arlo.com'
+            };
+        }
+    ]);
+    </script>
+
+
+
+    <style>
+
+
+$icon-font-path: '../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/';
+
+// bower:scss
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+
+/* Space out content a bit */
+body {
+  // padding-top: 20px;
+  // padding-bottom: 20px;
+  background-color: white !important;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+
+
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+    background-color: #f0f0f0 !important;
+    // height:200px;
+    padding-top: 0px; 
+  }
+
+
+
+
+
+}
+
+.green-p {
+        color: green;
+        font-size: 18px;
+        margin-right: 26px;
+        /*margin-left: 15px;*/
+}
+    
+.push-down{
+  background-color: #f0f0f0 !important;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+}
+
+// start 
+
+
+#close {
+    box-sizing: border-box;
+    color: rgb(68, 68, 68);
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    align-self: stretch;
+    border: 0px none rgb(68, 68, 68);
+    border-radius: 5px 5px 5px 5px;
+    font: normal normal normal normal 16.5px/24.7499980926514px Helvetica, sans-serif;
+    outline: rgb(68, 68, 68) none 0px;
+}/*#DIV_1*/
+
+#close:before {
+    box-sizing: border-box;
+    color: rgb(187, 187, 187);
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    position: absolute;
+    right: 3px;
+    text-align: center;
+    top: 3px;
+    width: 30px;
+    align-self: stretch;
+    perspective-origin: 15px 15px;
+    transform-origin: 15px 15px;
+    content: '×';
+    border: 0px none rgb(187, 187, 187);
+    border-radius: 3px 3px 3px 3px;
+    font: normal normal normal normal 26px/26px Helvetica, Arial, sans-serif;
+    outline: rgb(187, 187, 187) none 0px;
+}/*#DIV_1:before*/
+
+
+
+
+
+
+
+
+
+// later 
+
+
+
+#DIV_1 {
+    box-sizing: border-box;
+    color: rgb(68, 68, 68);
+    height: 45px;
+    text-align: left;
+    width: auto;
+    perspective-origin: 298.508514404297px 22.5px;
+    transform-origin: 298.508514404297px 22.5px;
+    background: rgb(211, 211, 211) none repeat scroll 0% 0% / auto padding-box border-box;
+    border-top: 0px none rgb(229, 229, 229);
+    border-right: 0px none rgb(229, 229, 229);
+    border-bottom: 0.909090876579285px solid rgb(229, 229, 229);
+    border-left: 0px none rgb(229, 229, 229);
+    border-radius: 5px 5px 0 0;
+    font: normal normal normal normal 16.5px/24.7499980926514px Helvetica, sans-serif;
+    margin: 0px 0px 0px;
+    margin-left: 3px;
+    margin-right: 3px;
+    outline: rgb(68, 68, 68) none 0px;
+}/*#DIV_1*/
+
+#H3_2 {
+    box-sizing: border-box;
+    color: rgb(68, 68, 68);
+    height: 36.4488639831543px;
+    text-align: left;
+    width: 597.017028808594px;
+    perspective-origin: 298.508514404297px 18.2244319915772px;
+    transform-origin: 298.508514404297px 18.2244319915772px;
+    border: 0px none rgb(68, 68, 68);
+    font: normal normal 500 normal 24px/24px MorebiRounded-Regular, Arial;
+    margin: 2px 0px 10px 100px;
+    outline: rgb(68, 68, 68) none 0px;
+    padding: 11px 0px 0px 33px;
+    text-align: center;
+}/*#H3_2*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="jumbotron">
+
+    <div id="close">
+</div>
+
+
+        <div id="DIV_1">
+            <h3 id="H3_2">
+                        Congratulations on activating your cameras!! 
+                  </h3>
+        </div>
+        <div class="row push-down">
+            <div class="col-xs-6 ">
+                <img src="http://localhost:8080/img2/camera_hand.png">
+            </div>
+            <div class="col-xs-6 ">
+                <div class="row green-p">
+                    Tell your friends and family how easy it is to set up Arlo cameras OR just tell them how cool your new Arlo cameras are
+                </div>
+            </div>
+        </div>
+        
+        <div class="push-down">
+            <div ng-controller="myController" class="text-center">
+                    <div class="col-xs-3">
+                        <div> Share via: </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div fb-like="myModel.FbLikeUrl"></div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div tweet="myModel.Name"></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div google-plus></div>
+                    </div>
+            </div>
+        </div>
+
+
+        <!-- </div> -->
+    </div>   <!-- jumbotron -->
+
+    <!-- container -->
+</body>
+
+</html>
