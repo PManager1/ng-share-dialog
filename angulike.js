@@ -84,7 +84,7 @@
                       }
 
                       function renderPlusButton() {
-                          element.html('<div class="g-plusone" data-annotation="none" data-size="medium"></div>');
+                          element.html('<div class="g-plusone" data-annotation="none" data-size="standard"></div>');
                           $window.gapi.plusone.go(element.parent()[0]);
                       }
                   }

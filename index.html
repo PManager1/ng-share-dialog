@@ -231,13 +231,17 @@ function gogogo() {
     width: 32px;
     perspective-origin: 16px 16px;
     transform-origin: 16px 16px;
-    background: rgba(0, 0, 0, 0) url(img/facebook_32.png) repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) url(img2/facebook_32.png) repeat scroll 0% 0% / auto padding-box border-box;
     font: normal normal normal normal 11px/16px Helvetica, Tahoma, Arial;
 }/*#SPAN_1*/
 
+.g-plus{
+    margin-top: 3px;
+}
 
-
-
+.fb-icon{
+    margin-top: -4px;
+}
 
     </style>
 </head>
@@ -254,7 +258,7 @@ function gogogo() {
         </div>
         <div class="row push-down">
             <div class="col-xs-6 ">
-                <img src="img/camera_hand.png">
+                <img src="img2/camera_hand.png">
             </div>
             <div class="col-xs-6 ">
                 <div class="row green-p">
@@ -264,11 +268,11 @@ function gogogo() {
         </div>
         <div class="push-down">
             <div ng-controller="myController" class="text-center">
-                <div class="col-xs-4">
+                <div class="col-xs-6">
                     <div> Share via: </div>
                 </div>
 
-                <div class="col-xs-4">
+                <div class="col-xs-2 fb-icon">
                     <!-- <div fb-like="myModel.FbLikeUrl"></div> -->
                     <span onclick="gogogo()" id="fb-icon"></span>
 
@@ -279,7 +283,7 @@ function gogogo() {
                 </div>
 
 
-                <div class="col-xs-2">
+                <div class="col-xs-2 g-plus">
                     <div google-plus></div>
                 </div>
 
