@@ -240,8 +240,26 @@ function gogogo() {
 }
 
 .fb-icon{
-    margin-top: -4px;
+    margin-top: 1px;
 }
+
+
+#SPAN_1 {
+    cursor: pointer;
+    display: inline-block;
+    height: 28px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: 60px;
+    perspective-origin: 30px 11px;
+    transform-origin: 30px 11px;
+    background: rgba(0, 0, 0, 0) url(img2/fb-share.png) no-repeat scroll 0% 0% / auto padding-box border-box;
+    font: normal normal normal normal 11px/16px Verdana, Helvetica, sans-serif;
+    padding: 3px 0px;
+}/*#SPAN_1*/
+
+
 
     </style>
 </head>
@@ -273,8 +291,12 @@ function gogogo() {
                 </div>
 
                 <div class="col-xs-2 fb-icon">
-                    <!-- <div fb-like="myModel.FbLikeUrl"></div> -->
-                    <span onclick="gogogo()" id="fb-icon"></span>
+
+                    <!-- <span onclick="gogogo()" id="fb-icon"></span> -->
+
+
+<span onclick="gogogo()" id="SPAN_1"></span>
+
 
                 </div>
 
