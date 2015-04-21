@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
+
 <head>
     <meta charset="utf-8" />
     <!-- for Facebook -->
@@ -8,43 +9,46 @@
     <meta property="og:image" content="http://arlo.com/en-us/images/WebsitePieces/homepage/A_header-vmc3030-camera-water-photo-large.png" />
     <meta property="og:url" content="https://arlo.netgear.com/#/login" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId: '625280937606983',
+            xfbml: true,
+            version: 'v2.3'
+        });
+    };
 
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '625280937606983',
-      xfbml      : true,
-      version    : 'v2.3'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- <button onclick="gogogo()">Share me, please 2</button> -->
 
 
-<!-- <button onclick="gogogo()">Share me, please 2</button> -->
-<script>
-function gogogo() {
-  FB.ui({
-    method: 'feed',
-    link: 'arlo.com',
-    picture: 'http://www.arlo.com/en-us/images/WebsitePieces/homepage/social_share.png',
-    name: 'Arlo',
-    caption: 'Learn how easy Arlo is!',
-
-    // description: 'Must read daily!'
-  });
-}
-</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 
+    <script>
+    function gogogo() {
+        FB.ui({
+            method: 'feed',
+            link: 'arlo.com',
+            picture: 'http://www.arlo.com/en-us/images/WebsitePieces/homepage/social_share.png',
+            name: 'Arlo',
+            caption: 'Learn how easy Arlo is!',
+
+            // description: 'Must read daily!'
+        });
+    }
+    </script>
     <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
     <script src="//code.angularjs.org/1.2.16/angular.js"></script>
     <!-- <script src="https://arlodev.netgear.com/js/angulike.js"></script> -->
@@ -72,7 +76,6 @@ function gogogo() {
         }
     ]);
     </script>
-
     <style>
     $icon-font-path: '../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/';
     @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
@@ -83,12 +86,12 @@ function gogogo() {
     }
     /* Everything but the jumbotron gets side spacing for mobile first views */
     /* Main marketing message and sign up button */
-
+    
     .jumbotron {
         text-align: center;
     }
     /* Supporting marketing content */
-
+    
     .marketing {
         margin: 40px 0;
         p + h4 {
@@ -96,26 +99,17 @@ function gogogo() {
         }
     }
     /* Responsive: Portrait tablets and up */
-
+    
     @media screen and (min-width: 768px) {
         .container {
             max-width: 730px;
         }
-        /* Remove the padding we set earlier */
-
-        .header,
-        .marketing,
-        .footer {
-            padding-left: 0;
-            padding-right: 0;
-        }
-        /* Space out the masthead */
-
+        
         .header {
             margin-bottom: 30px;
         }
         /* Remove the bottom border on the jumbotron for visual effect */
-
+        
         .jumbotron {
             border-bottom: 0;
             background-color: #f0f0f0 !important;
@@ -124,13 +118,24 @@ function gogogo() {
         }
     }
 
+
+
+    @media screen and (min-width: 768px) {
+        .green-p {
+        color: red;
+        font-size: 18px;
+        margin-right: 26px;
+        /*margin-left: 15px;*/
+    }
+    }
+
     .green-p {
         color: green;
         font-size: 18px;
         margin-right: 26px;
         /*margin-left: 15px;*/
     }
-
+   
     .push-down-1 {
         background-color: #f0f0f0 !important;
         padding-top: 30px;
@@ -138,13 +143,15 @@ function gogogo() {
         margin-left: 2px;
         margin-right: 2px;
     }
+    
     .push-down-2 {
         background-color: #f0f0f0 !important;
         padding-top: 0px;
         padding-bottom: 30px;
         margin-left: 2px;
         margin-right: 2px;
-    }    
+    }
+    
     #close {
         box-sizing: border-box;
         color: rgb(68, 68, 68);
@@ -159,8 +166,7 @@ function gogogo() {
         outline: rgb(68, 68, 68) none 0px;
     }
     /*#DIV_1*/
-
- /*   #close:before {
+    /*   #close:before {
         box-sizing: border-box;
         color: rgb(187, 187, 187);
         cursor: pointer;
@@ -180,11 +186,8 @@ function gogogo() {
         font: normal normal normal normal 26px/26px Helvetica, Arial, sans-serif;
         outline: rgb(187, 187, 187) none 0px;
     }*/
-
-
-    
     /*#DIV_1:before*/
-
+    
     #DIV_1 {
         box-sizing: border-box;
         color: rgb(68, 68, 68);
@@ -206,7 +209,7 @@ function gogogo() {
         outline: rgb(68, 68, 68) none 0px;
     }
     /*#DIV_1*/
-
+    
     #H3_2 {
         box-sizing: border-box;
         color: rgb(68, 68, 68);
@@ -223,56 +226,159 @@ function gogogo() {
         text-align: center;
     }
     /*#H3_2*/
-
+    
     .top-down {
         margin-bottom: 1px;
         padding-bottom: 12px;
     }
-
+    
     #fb-icon {
-    cursor: pointer;
-    display: inline-block;
-    height: 32px;
-    position: relative;
-    vertical-align: top;
-    width: 32px;
-    perspective-origin: 16px 16px;
-    transform-origin: 16px 16px;
-    background: rgba(0, 0, 0, 0) url(img2/facebook_32.png) repeat scroll 0% 0% / auto padding-box border-box;
-    font: normal normal normal normal 11px/16px Helvetica, Tahoma, Arial;
-}/*#SPAN_1*/
+        cursor: pointer;
+        display: inline-block;
+        height: 32px;
+        position: relative;
+        vertical-align: top;
+        width: 32px;
+        perspective-origin: 16px 16px;
+        transform-origin: 16px 16px;
+        background: rgba(0, 0, 0, 0) url(img2/facebook_32.png) repeat scroll 0% 0% / auto padding-box border-box;
+        font: normal normal normal normal 11px/16px Helvetica, Tahoma, Arial;
+    }
+    /*#SPAN_1*/
+    
+    .g-plus {
+        margin-top: 2px;
+    }
+    
+    .fb-icon {
+        margin-top: 1px;
+    }
+    
+    #SPAN_1 {
+        cursor: pointer;
+        display: inline-block;
+        height: 28px;
+        position: relative;
+        text-align: center;
+        white-space: nowrap;
+        width: 60px;
+        perspective-origin: 30px 11px;
+        transform-origin: 30px 11px;
+        background: rgba(0, 0, 0, 0) url(img2/fb-share.png) no-repeat scroll 0% 0% / auto padding-box border-box;
+        font: normal normal normal normal 11px/16px Verdana, Helvetica, sans-serif;
+        padding: 3px 0px;
+    }
+    /*#SPAN_1*/
 
-.g-plus{
-    margin-top: 2px;
+
+        #logo { background: url(img2/camera_hand.png); background-repeat: none; width: 236px;
+            height: 180px;
+         }
+
+
+
+
+/*iphone5*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) { 
+
+    .green-p {
+            color: green;
+            font-size: 12px;
+            margin-right: 0px;
+            margin-left: 15px;
+        }
+         #H3_2{
+            width:auto;
+            font-size:10px;
+        }
+
+
+      #logo { background: url(img2/camera_hand_mo.png); background-repeat: none; width: 150px;
+        height: 90px;
+        margin-right: 20px;
+     }
+     .jumbotron{
+        padding-top:0px;
+     }
+
+      .push-down-1{
+            background-color: #f0f0f0 !important;
+            padding-top: 30px;
+            padding-bottom: 10px;
+            margin-left: 2px;
+            margin-right: 2px;
+     }
+
+
+         .push-down-2 {
+            background-color: #f0f0f0 !important;
+            padding-top: 0px;
+            padding-bottom: 30px;
+            margin-left: 2px;
+            margin-right: 2px;
+        }
 }
 
-.fb-icon{
-    margin-top: 1px;
+
+/*iphone6*/
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) {
+        .green-p {
+                color: green;
+                font-size: 12px;
+                margin-right: 0px;
+                margin-left: 15px;
+            }
+             #H3_2{
+                width:auto;
+                font-size:10px;
+            }
+
+
+          #logo { background: url(img2/camera_hand_mo.png); background-repeat: none; width: 169px;
+            height: 90px;
+            margin-right: 20px;
+         }
+         .jumbotron{
+            padding-top:0px;
+         }
+         .push-down-1{
+                background-color: #f0f0f0 !important;
+                padding-top: 30px;
+                padding-bottom: 10px;
+                margin-left: 2px;
+                margin-right: 2px;
+         }
+
+        .push-down-2 {
+                background-color: #f0f0f0 !important;
+                padding-top: 0px;
+                padding-bottom: 30px;
+                margin-left: 2px;
+                margin-right: 2px;
+            }
 }
 
 
-#SPAN_1 {
-    cursor: pointer;
-    display: inline-block;
-    height: 28px;
-    position: relative;
-    text-align: center;
-    white-space: nowrap;
-    width: 60px;
-    perspective-origin: 30px 11px;
-    transform-origin: 30px 11px;
-    background: rgba(0, 0, 0, 0) url(img2/fb-share.png) no-repeat scroll 0% 0% / auto padding-box border-box;
-    font: normal normal normal normal 11px/16px Verdana, Helvetica, sans-serif;
-    padding: 3px 0px;
-}/*#SPAN_1*/
+
+
 
 
 
     </style>
+    <link rel="stylesheet" media="all and (max-device-width: 480px) and (orientation:portrait)" href="css/iphone-portrait.css" />
+    <link rel="stylesheet" media="all and (max-device-width: 480px) and (orientation:landscape)" href="css/iphone-landscape.css" />
+    <link rel="stylesheet" media="all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait)" href="css/ipad-portrait.css" />
+    <link rel="stylesheet" media="all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape)" href="css/ipad-landscape.css" />
+    <link rel="stylesheet" media="all and (device-width: 800px) and (device-height: 1184px) and (orientation:portrait)" href="htcdesire-portrait.css" />
+    <link rel="stylesheet" media="all and (device-width: 800px) and (device-height: 390px) and (orientation:landscape)" href="htcdesire-landscape.css" />
+    <link rel="stylesheet" media="all and (min-device-width: 1025px)" href="desktop.css" />
 </head>
 
 <body>
-
     <div class="jumbotron top-down">
         <div id="close">
         </div>
@@ -282,43 +388,27 @@ function gogogo() {
                   </h3>
         </div>
         <div class="row push-down-1">
-            <div class="col-xs-6 ">
-                <img src="img2/camera_hand.png">
+            <div class="col-xs-6">
+                <!-- <img src="img2/camera_hand.png"> -->
+                <div id="logo"> </div>
+
             </div>
-            <div class="col-xs-6 ">
+            <div class="col-xs-6">
                 <div class="row green-p">
-                     Many arlo users found installing Arlo cameras very easy. If
-￼you agree, share it now with your friends and family
+                    Many arlo users found installing Arlo cameras very easy. If ￼you agree, share it now with your friends and family
                 </div>
             </div>
         </div>
-        <div class="push-down-2">
-            <div ng-controller="myController" class="text-center">
-                <div class="col-xs-6">
-                    <div>  </div>
+        <div ng-controller="myController" class="text-center push-down-2 row">
+                <div class="col-xs-4 fb-icon">
+                    <span onclick="gogogo()" id="SPAN_1"></span>
                 </div>
-
-                <div class="col-xs-2 fb-icon">
-
-                    <!-- <span onclick="gogogo()" id="fb-icon"></span> -->
-
-
-<span onclick="gogogo()" id="SPAN_1"></span>
-
-
-                </div>
-
-                <div class="col-xs-2">
+                <div class="col-xs-4">
                     <div tweet="myModel.Name"></div>
                 </div>
-
-
-                <div class="col-xs-2 g-plus">
+                <div class="col-xs-4 g-plus">
                     <div google-plus></div>
                 </div>
-
-
-            </div>
         </div>
         <!-- </div> -->
     </div>
