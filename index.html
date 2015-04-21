@@ -77,6 +77,29 @@
     ]);
     </script>
     <style>
+
+
+
+    @font-face {
+        font-family: myFirstFont;
+        src: url(styles/2BF294_D_0.woff);
+    }
+
+
+
+
+
+@font-face {
+font-family: 'MorebiRounded-Regular';
+    src: url('webfonts/2BF294_D_0.eot') format('embedded-opentype'); /* IE9 + later */
+    src: url('webfonts/2BF294_D_0.eot?#iefix') format('embedded-opentype'), /* IE6 to IE8  */
+         url('webfonts/2BF294_D_0.woff') format('woff');     /* Newer browsers */
+    src: url('webfonts/2BF294_D_0.ttf') format('truetype');  /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
+         url('webfonts/2BF294_D_0.eot.svg#Min_font + regular, italic, bold) format('svg'); 
+}
+
+
+
     $icon-font-path: '../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/';
     @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
     body {
@@ -89,6 +112,7 @@
     
     .jumbotron {
         text-align: center;
+        padding: 0px 0px 0px 0px;
     }
     /* Supporting marketing content */
     
@@ -114,7 +138,7 @@
             border-bottom: 0;
             background-color: #f0f0f0 !important;
             // height:200px;
-            padding-top: 0px;
+            padding: 0px 0px 0px 0px;
         }
     }
 
@@ -132,8 +156,8 @@
     .green-p {
         color: green;
         font-size: 18px;
-        margin-right: 26px;
-        /*margin-left: 15px;*/
+        margin-right: -16px;
+        margin-left: 3px;
     }
    
     .push-down-1 {
@@ -225,11 +249,10 @@
         padding: 11px 0px 0px 33px;
         text-align: center;
     }
-    /*#H3_2*/
     
     .top-down {
         margin-bottom: 1px;
-        padding-bottom: 12px;
+        /*padding-bottom: 12px;*/
     }
     
     #fb-icon {
@@ -286,12 +309,13 @@ and (max-device-width : 568px) {
     .green-p {
             color: green;
             font-size: 12px;
-            margin-right: 0px;
-            margin-left: 15px;
+            margin-right: -16px;
+            margin-left: 3px;
         }
          #H3_2{
             width:auto;
             font-size:10px;
+            font: normal normal 500 normal 24px/24px MorebiRounded-Regular, Arial;
         }
 
 
@@ -300,7 +324,7 @@ and (max-device-width : 568px) {
         margin-right: 20px;
      }
      .jumbotron{
-        padding-top:0px;
+           padding: 0px 0px 0px 0px;
      }
 
       .push-down-1{
@@ -315,7 +339,7 @@ and (max-device-width : 568px) {
          .push-down-2 {
             background-color: #f0f0f0 !important;
             padding-top: 0px;
-            padding-bottom: 30px;
+            padding-bottom: 9px;
             margin-left: 2px;
             margin-right: 2px;
         }
@@ -384,7 +408,7 @@ and (max-device-width : 736px) {
         </div>
         <div id="DIV_1">
             <h3 id="H3_2">
-                        Congratulations on activating your cameras!
+                       scp-Congratulations on activating your cameras!
                   </h3>
         </div>
         <div class="row push-down-1">
