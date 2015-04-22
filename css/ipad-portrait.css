@@ -1,6 +1,6 @@
     .green-p {
             color: green;
-            font-size: 12px;
+            font-size: 112px;
             margin-right: -16px;
             margin-left: 3px;
         }
@@ -9,6 +9,7 @@
             font-size:13px;
             font: normal normal 500 normal;
             font-family:'MorebiRounded-Regular';
+            padding-left: 0px;
         }
 
 
