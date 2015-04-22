@@ -6,29 +6,34 @@ font-family: 'MorebiRounded-Regular';
     src: url('webfonts/2BF294_D_0.ttf') format('truetype');  /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
          url('webfonts/2BF294_D_0.eot.svg#Min_font + regular, italic, bold) format('svg'); 
 }
+    
+  .land{
+    width:50% !important;
+  }  
+
   #logo { background: url(../img2/camera_hand.png); background-repeat: none; 
-    width: 120px;
+    width: 220px;
     height: 150px;
     margin-left:20px;
     margin-right: 20px;
-    background-color: pink;
+    /*background-color: pink;*/
  }
 
 
 .green-p {
+        margin-top: 10px;
         color: green;
-        font-size: 12px;
-        margin-right: -16px;
-        margin-left: 17px;
-        background-color: yellow;
-        width:25%;
+        font-size: 18px;
+        margin-right: 0px;
+        margin-left: 0px;
+        /*background-color: yellow;*/
     }
      #heading{
         width:auto;
         font-size:13px;
         font: normal normal 500 normal;
         font-family:'MorebiRounded-Regular';
-        background-color: green;
+        /*background-color: green;*/
     }
 
 
