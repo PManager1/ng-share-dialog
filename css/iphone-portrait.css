@@ -7,27 +7,31 @@ font-family: 'MorebiRounded-Regular';
          url('webfonts/2BF294_D_0.eot.svg#Min_font + regular, italic, bold) format('svg'); 
 }
 
+     #logo { background: url(../img2/camera_hand.png); background-repeat: none; 
+        width: 250px;
+        height: 190px;
+        margin-right: 20px;
+        background-position: 0px 0px;
+     }
 
-.green-p {
+    .green-p {
         color: green;
         font-size: 12px;
         margin-right: -16px;
         margin-left: 3px;
     }
+
+
      #heading{
         width:auto;
-        font-size:13px;
+        font-size:16px;
         font: normal normal 500 normal;
         font-family:'MorebiRounded-Regular';
         padding-left: 0px;
     }
 
 
-  #logo { background: url(../img2/camera_hand.png); background-repeat: none; 
-    width: 250px;
-    height: 190px;
-    margin-right: 20px;
- }
+ 
  .jumbotron{
        padding: 0px 0px 0px 0px;
  }
