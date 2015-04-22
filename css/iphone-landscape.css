@@ -1,38 +1,50 @@
-    .green-p {
-            color: green;
-            font-size: 12px;
-            margin-right: -16px;
-            margin-left: 3px;
-        }
-         #heading{
-            width:auto;
-            font-size:13px;
-            font: normal normal 500 normal;
-            font-family:'MorebiRounded-Regular';
-        }
+@font-face {
+font-family: 'MorebiRounded-Regular';
+    src: url('webfonts/2BF294_D_0.eot') format('embedded-opentype'); /* IE9 + later */
+    src: url('webfonts/2BF294_D_0.eot?#iefix') format('embedded-opentype'), /* IE6 to IE8  */
+         url('webfonts/2BF294_D_0.woff') format('woff');     /* Newer browsers */
+    src: url('webfonts/2BF294_D_0.ttf') format('truetype');  /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
+         url('webfonts/2BF294_D_0.eot.svg#Min_font + regular, italic, bold) format('svg'); 
+}
 
 
-      #logo { background: url(../img2/camera_hand_mo.png); background-repeat: none; width: 150px;
-        height: 90px;
-        margin-right: 20px;
-     }
-     .jumbotron{
-           padding: 0px 0px 0px 0px;
-     }
+ #logo { background: url(../img2/camera_hand_mo.png); background-repeat: none; 
+    width: 100px;
+    height: 90px;
+    margin-right: 20px;
+ }
 
-      .push-down-1{
-            background-color: #f0f0f0 !important;
-            padding-top: 30px;
-            padding-bottom: 10px;
-            margin-left: 2px;
-            margin-right: 2px;
-     }
+.green-p {
+        color: green;
+        font-size: 12px;
+        margin-right: -16px;
+        margin-left: 3px;
+    }
+     #heading{
+        width:auto;
+        font-size:13px;
+        font: normal normal 500 normal;
+        font-family:'MorebiRounded-Regular';
+    }
 
 
-         .push-down-2 {
-            background-color: #f0f0f0 !important;
-            padding-top: 0px;
-            padding-bottom: 9px;
-            margin-left: 2px;
-            margin-right: 2px;
-        }
+ .jumbotron{
+       padding: 0px 0px 0px 0px;
+ }
+
+  .push-down-1{
+        background-color: #f0f0f0 !important;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+ }
+
+
+     .push-down-2 {
+        background-color: #f0f0f0 !important;
+        padding-top: 0px;
+        padding-bottom: 9px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
