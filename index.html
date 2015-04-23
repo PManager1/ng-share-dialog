@@ -217,7 +217,7 @@ font-family: 'MorebiRounded-Regular';
         color: rgb(68, 68, 68);
         height: 45px;
         text-align: left;
-        width: auto;
+        width: inherit;
         perspective-origin: 298.508514404297px 22.5px;
         transform-origin: 298.508514404297px 22.5px;
         background: rgb(211, 211, 211) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -295,60 +295,25 @@ font-family: 'MorebiRounded-Regular';
     /*#SPAN_1*/
 
 
-        #logo { background: url(img2/camera_hand.png); background-repeat: none; width: 236px;
-            height: 169px;
-         }
-
-
-
-
-/*iphone5*/
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) { 
-
-}
-
-
-/*iphone6*/
-@media only screen 
-and (min-device-width : 414px) 
-and (max-device-width : 736px) {
-
-}
-
-
-
-@media only screen 
-and (max-device-width: 480px) 
-and (orientation:landscape)
- {
-/*     #heading{
-                width:auto;
-                font-size:10px;
-                font-family:'MorebiRounded-Regular';
-                color:red;
-            }*/
-
-}
-
-
-
 
     </style>
+
+        <!-- extra small -->
+    <link rel="stylesheet" media="all and (max-device-width: 200px) and (orientation:landscape)" href="css/iphone-alex.css" />
+
+
     <link rel="stylesheet" media="all and (max-device-width: 480px) and (orientation:portrait)" href="css/iphone-portrait.css" />
-
     <link rel="stylesheet" media="all and (max-device-width: 480px) and (orientation:landscape)" href="css/iphone-landscape.css" />
-
     <link rel="stylesheet" media="all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait)" href="css/ipad-portrait.css" />
-
     <link rel="stylesheet" media="all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape)" href="css/ipad-landscape.css" />
 
 <!--     <link rel="stylesheet" media="all and (device-width: 800px) and (device-height: 1184px) and (orientation:portrait)" href="htcdesire-portrait.css" />
 
     <link rel="stylesheet" media="all and (device-width: 800px) and (device-height: 390px) and (orientation:landscape)" href="htcdesire-landscape.css" />
  -->    
+
     <link rel="stylesheet" media="all and (min-device-width: 1025px)" href="desktop.css" />
+
 </head>
 
 
@@ -366,7 +331,40 @@ and (orientation:landscape)
         <div class="row push-down-1">
             <div class=" col-xs-12  col-sm-6 col-lg-6 land">
                 <!-- <img src="img2/camera_hand.png"> -->
-                <div id="logo"> </div>
+
+
+            <picture alt="arlo camera">
+
+              <!-- low-res, default -->
+              <source src="img2/camera_hand.png">
+
+
+            <!-- iphone - landscape  Alex -->
+              <source src="img2/fb-share.png" media="all and (max-device-width: 200px) and (orientation:landscape)">
+
+
+
+              <!-- iphone -po  big-->
+              <source src="img2/camera_hand.png" media="all and (max-device-width: 480px) and (orientation:portrait)">
+
+            <!-- iphone - la   small -->
+              <source src="img2/camera_hand_mo.png" media="all and (max-device-width: 480px) and (orientation:landscape)">
+
+              <!-- ipad-po   small -->
+              <source src="img2/camera_hand.png" media="all and (max-device-width: 480px) and (orientation:landscape)">
+
+              <!-- ipad-la   small -->
+              <source src="img2/camera_hand.png" media="all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape)">
+
+
+              <!-- Fallback content -->
+              <img src="img2/camera_hand.png" alt="description of image">
+
+            </picture>
+
+
+
+
             </div>
 
             <div class="col-xs-12 col-sm-6 col-lg-6 land">
