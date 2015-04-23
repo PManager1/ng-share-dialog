@@ -6,6 +6,11 @@ font-family: 'MorebiRounded-Regular';
     src: url('webfonts/2BF294_D_0.ttf') format('truetype');  /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
          url('webfonts/2BF294_D_0.eot.svg#Min_font + regular, italic, bold) format('svg'); 
 }
+
+  body{
+    background-color: #f0f0f0;
+  }
+  
     
   .land{
     width:50% !important;

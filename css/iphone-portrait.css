@@ -7,6 +7,10 @@ font-family: 'MorebiRounded-Regular';
          url('webfonts/2BF294_D_0.eot.svg#Min_font + regular, italic, bold) format('svg'); 
 }
 
+  body{
+    background-color: #f0f0f0;
+  }
+
      #logo { background: url(../img2/camera_hand.png); background-repeat: none; 
         width: 250px;
         height: 190px;
